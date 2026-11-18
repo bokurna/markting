@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تسويق المحلات الصغيرة في القصيم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#111111; --muted:#666663; --line:#e8e8e5; --soft:#f6f6f3; --field:#fafaf8;
+  --amber:#e0a030;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111111; --ink:#f4f4f1; --muted:#a3a39e; --line:#2c2c2a; --soft:#1a1a18; --field:#161614;
+    --amber:#e8ae45; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111111; --ink:#f4f4f1; --muted:#a3a39e; --line:#2c2c2a; --soft:#1a1a18; --field:#161614;
+  --amber:#e8ae45; color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.8;font-size:17px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+h1,h2,h3{margin:0;line-height:1.3}
+h2{font-size:clamp(28px,4.5vw,40px);font-weight:700}
+.sub{color:var(--muted);margin:6px 0 30px}
+section{padding:64px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;font:inherit;font-weight:700;text-decoration:none;padding:13px 28px;border-radius:999px;background:var(--ink);color:var(--bg)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.soc a:focus-visible,.sc:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font-weight:700;font-size:21px}
+.soc{display:flex;gap:10px}
+.soc a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--bg)}
+.soc svg{width:20px;height:20px}
+
+/* hero */
+.hero{padding:40px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,7.5vw,72px);font-weight:700;letter-spacing:-.5px;margin-bottom:20px}
+.hero p{font-size:19px;color:var(--muted);max-width:28em;margin:0 0 30px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.vis{position:relative;height:380px}
+.phone{position:absolute;right:50px;top:0;width:200px;height:360px;border:2px solid var(--ink);border-radius:34px;background:linear-gradient(170deg,var(--soft),var(--amber));display:grid;place-items:center}
+.phone::before{content:"";position:absolute;top:12px;width:54px;height:6px;border-radius:3px;background:var(--ink)}
+.phone::after{content:"";border-style:solid;border-width:15px 0 15px 25px;border-color:transparent transparent transparent var(--ink);margin-right:-6px}
+.web{position:absolute;right:-6px;bottom:6px;width:240px;height:150px;border:2px solid var(--ink);border-radius:14px;background:var(--bg);padding:34px 16px 0;z-index:2}
+.web::before{content:"";position:absolute;top:12px;right:14px;width:8px;height:8px;border-radius:50%;background:var(--ink);box-shadow:-14px 0 0 var(--ink),-28px 0 0 var(--ink)}
+.web i{display:block;height:9px;border-radius:5px;background:var(--line);margin-bottom:10px}
+.web i:first-child{width:70%;background:var(--ink)}
+.web i:last-child{width:45%}
+
+/* rules */
+.rules{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.rule{border-top:3px solid var(--amber);padding-top:16px}
+.rule b{display:block;font-size:20px;margin-bottom:4px}
+.rule span{color:var(--muted);font-size:16px}
+
+/* request */
+.alt{background:var(--soft)}
+.req{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}
+.req ul{margin:18px 0 0;padding:0;list-style:none;color:var(--muted)}
+.req li{padding:4px 0}
+.req li::before{content:"✓";color:var(--ink);font-weight:700;margin-left:8px}
+form{display:grid;gap:14px;background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:clamp(20px,3.5vw,32px)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:6px;font-weight:500;font-size:15px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+textarea{resize:vertical;min-height:80px}
+.hint{color:var(--muted);font-size:14px;margin:0}
+fieldset{border:0;padding:0;margin:0;display:grid;gap:8px;min-width:0}
+legend{padding:0;font-weight:500;font-size:15px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;position:relative;align-items:center;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14.5px;font-weight:400;background:var(--field);cursor:pointer}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip:has(input:checked){background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:has(input:focus-visible){outline:3px solid var(--amber);outline-offset:2px}
+.buy label{font-size:14px;margin-bottom:12px}
+.buy select{padding:9px 12px;font-size:15px}
+
+/* packages */
+.inc{border:1.5px solid var(--ink);border-radius:16px;padding:14px 22px;margin-bottom:22px;font-weight:500}
+.pkg{position:relative;display:grid;grid-template-columns:1fr 1.25fr .9fr;gap:24px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:28px 30px;margin-bottom:16px}
+.pkg.hot{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pkg.hot .btn{background:var(--bg);color:var(--ink)}
+.pkg.hot .for,.pkg.hot .was,.pkg.hot small{color:inherit;opacity:.75}
+.badge{position:absolute;top:-13px;left:24px;background:var(--amber);color:#1a1405;font-weight:700;font-size:13.5px;padding:3px 14px;border-radius:999px}
+.pkg h3{font-size:25px}
+.for{color:var(--muted);font-size:15px}
+.pkg ul{margin:0;padding:0;list-style:none;font-size:16px}
+.pkg li{padding:3px 0}
+.pkg li::before{content:"✓";font-weight:700;margin-left:8px}
+.price{font-size:46px;font-weight:700;line-height:1.1}
+.price small{font-size:15px;font-weight:500;color:var(--muted)}
+.was{color:var(--muted);font-size:14.5px;margin:2px 0 14px}
+.note{margin-top:20px;color:var(--muted);font-size:15px}
+
+/* contact */
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:34px}
+.sc{display:flex;gap:14px;align-items:center;border:1px solid var(--line);border-radius:18px;padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--bg)}
+.sc i{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--bg)}
+.sc svg{width:22px;height:22px}
+.sc b{display:block;line-height:1.4}
+.sc span{color:var(--muted);font-size:14px}
+.team{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.team div{border-right:3px solid var(--amber);padding:2px 16px}
+.team b{display:block;font-size:18px}
+.team span{color:var(--muted);font-size:15px}
+footer{padding:26px 0 44px;text-align:center;color:var(--muted);font-size:14px}
+
+@media (max-width:780px){
+  .hero .wrap,.req,.pkg{grid-template-columns:1fr}
+  .vis{max-width:320px;margin:0 auto;width:100%}
+  .phone{right:30px}
+  .two{grid-template-columns:1fr}
+  section{padding:46px 0}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tt" viewBox="0 0 24 24"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
+</svg>
+
+<div class="wrap top">
+  <div class="brand">تسويق القصيم</div>
+  <div class="soc">
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="تيك توك"><svg><use href="#tt"/></svg></a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="انستقرام"><svg><use href="#ig"/></svg></a>
+    <a href="https://x.com/" target="_blank" rel="noopener" aria-label="إكس"><svg><use href="#x"/></svg></a>
+  </div>
+</div>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>محلك يستحق أن يُرى.</h1>
+    <p>تصوير ومونتاج وتصميم ونشر لمحلات القصيم، مع موقع إلكتروني خاص بمحلك. حدد ميزانيتك ونبني لك العرض.</p>
+    <div class="row">
+      <a class="btn" href="#request">حدد ميزانيتك</a>
+      <a class="btn ghost" href="#packages">شاهد الباقات</a>
+    </div>
+  </div>
+  <div class="vis" aria-hidden="true"><div class="phone"></div><div class="web"><i></i><i></i><i></i></div></div>
+</div></header>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="rules">
+    <div class="rule"><b>النشر من حسابك</b><span>المحتوى والإعلان يخرجان من حساب محلك، لا من حسابنا.</span></div>
+    <div class="rule"><b>ميزانية تحددها أنت</b><span>اكتب المبلغ الذي تقدر عليه، ونبني لك العرض على قدره.</span></div>
+    <div class="rule"><b>العربون أولاً</b><span>بعد الاتفاق تدفع العربون، ثم نبدأ العمل ونسلّم.</span></div>
+  </div>
+</div></section>
+
+<section id="request" class="alt"><div class="wrap">
+  <div class="req">
+    <div>
+      <h2>حدد ميزانيتك</h2>
+      <p class="sub">اكتب ما تقدر عليه، ونصمم لك عرضاً يناسبه.</p>
+      <ul>
+        <li>تكتب الميزانية التي تحددها</li>
+        <li>تختار المدة ونوع التسويق</li>
+        <li>نتفق معك عبر واتساب</li>
+        <li>تدفع العربون ثم نبدأ العمل</li>
+      </ul>
+    </div>
+    <form id="f">
+      <div class="two">
+        <label>اسم المحل<input name="shop" required placeholder="مثال: كافيه الواحة"></label>
+        <label>نوع النشاط
+          <select name="kind"><option>كافيه</option><option>مطعم</option><option>محل اتصالات</option><option>محل ملابس أو عطور</option><option>نشاط آخر</option></select>
+        </label>
+      </div>
+      <div class="two">
+        <label>ميزانيتك (ر.س)<input name="budget" type="number" min="0" inputmode="numeric" required placeholder="مثال: 800"></label>
+        <label>المدة المطلوبة
+          <select name="dur"><option>أسبوع</option><option>أسبوعان</option><option>شهر</option><option>مدة أخرى</option></select>
+        </label>
+      </div>
+      <fieldset><legend>نوع التسويق المطلوب (اختر ما يناسبك)</legend><div class="chips"><label class="chip"><input type="checkbox" name="type" value="مقاطع قصيرة">مقاطع قصيرة</label><label class="chip"><input type="checkbox" name="type" value="تصوير صور المنتجات">تصوير صور المنتجات</label><label class="chip"><input type="checkbox" name="type" value="تصاميم">تصاميم</label><label class="chip"><input type="checkbox" name="type" value="موقع إلكتروني">موقع إلكتروني</label><label class="chip"><input type="checkbox" name="type" value="هوية بصرية">هوية بصرية</label><label class="chip"><input type="checkbox" name="type" value="إدارة الحساب">إدارة الحساب</label><label class="chip"><input type="checkbox" name="type" value="كتابة المحتوى والنصوص">كتابة المحتوى والنصوص</label><label class="chip"><input type="checkbox" name="type" value="تصوير إعلان تجاري">تصوير إعلان تجاري</label><label class="chip"><input type="checkbox" name="type" value="تصوير المكان والمنيو">تصوير المكان والمنيو</label><label class="chip"><input type="checkbox" name="type" value="باقة متكاملة">باقة متكاملة</label></div></fieldset>
+      <div class="two"><label>عدد الأيام (تعدله كما تريد)<input name="days" type="number" min="1" max="90" value="7"></label><label>زيارات التصوير<select name="visits"><option>زيارتان</option><option>4 زيارات</option></select></label></div>
+      <fieldset><legend>أيام الأسبوع المفضلة (اختياري)</legend><div class="chips"><label class="chip"><input type="checkbox" name="wd" value="الأحد">الأحد</label><label class="chip"><input type="checkbox" name="wd" value="الاثنين">الاثنين</label><label class="chip"><input type="checkbox" name="wd" value="الثلاثاء">الثلاثاء</label><label class="chip"><input type="checkbox" name="wd" value="الأربعاء">الأربعاء</label><label class="chip"><input type="checkbox" name="wd" value="الخميس">الخميس</label><label class="chip"><input type="checkbox" name="wd" value="الجمعة">الجمعة</label><label class="chip"><input type="checkbox" name="wd" value="السبت">السبت</label></div></fieldset>
+      <label>ملاحظات (اختياري)<textarea name="note" placeholder="ماذا تريد أن تروّج له؟"></textarea></label>
+      <p class="hint">العربون أولاً، ثم نبدأ العمل.</p>
+      <button class="btn" type="submit">أرسل الطلب عبر واتساب</button>
+    </form>
+  </div>
+</div></section>
+
+<section id="packages"><div class="wrap">
+  <h2>الباقات حسب المدة</h2>
+  <p class="sub">أسعار مؤقتة لفترة محددة، وبعدها يُعتمد السعر العادي.</p>
+  <div class="inc">مع كل باقة: موقع إلكتروني خاص بمحلك.</div>
+
+  <article class="pkg">
+    <div><h3>باقة البداية</h3><div class="for">أسبوع، انطلاقة سريعة للمحل</div></div>
+    <ul><li>مقطعان قصيران بمونتاج وتصميم كامل</li><li>4 صور احترافية</li><li>تصميم واحد</li><li>موقع إلكتروني خاص بك</li><li>زيارات تصوير حسب اختيارك</li><li>نشر على حسابك</li></ul>
+    <div class="buy"><div class="price">600 <small>ر.س</small></div><div class="was">سعر مؤقت، العادي لاحقاً <s>850</s></div><label>زيارات التصوير<select><option>زيارتان</option><option>4 زيارات</option></select></label>
+    <button class="btn" type="button" data-pkg="باقة البداية" data-price="600">اطلبها عبر واتساب</button></div>
+  </article>
+
+  <article class="pkg">
+    <div><h3>باقة النمو</h3><div class="for">أسبوعان، حضور ثابت ونتائج أوضح</div></div>
+    <ul><li>4 مقاطع قصيرة بمونتاج وتصميم كامل</li><li>6 صور احترافية</li><li>2 تصميمان</li><li>موقع إلكتروني خاص بك</li><li>زيارات تصوير حسب اختيارك</li><li>نشر على حسابك</li></ul>
+    <div class="buy"><div class="price">1,200 <small>ر.س</small></div><div class="was">سعر مؤقت، العادي لاحقاً <s>1,600</s></div><label>زيارات التصوير<select><option>زيارتان</option><option>4 زيارات</option></select></label>
+    <button class="btn" type="button" data-pkg="باقة النمو" data-price="1,200">اطلبها عبر واتساب</button></div>
+  </article>
+
+  <article class="pkg hot">
+    <span class="badge">شاملة الهوية البصرية</span>
+    <div><h3>باقة الحضور الكامل</h3><div class="for">شهر، للمواسم والعروض الكبيرة</div></div>
+    <ul><li>6 مقاطع قصيرة بمونتاج وتصميم كامل</li><li>10 صور احترافية</li><li>4 تصاميم</li><li>هوية بصرية (شعار وألوان وخطوط)</li><li>موقع إلكتروني خاص بك</li><li>زيارات تصوير حسب اختيارك</li><li>نشر على حسابك</li></ul>
+    <div class="buy"><div class="price">2,000 <small>ر.س</small></div><div class="was">سعر مؤقت، العادي لاحقاً <s>2,800</s></div><label>زيارات التصوير<select><option>زيارتان</option><option>4 زيارات</option></select></label>
+    <button class="btn" type="button" data-pkg="باقة الحضور الكامل" data-price="2,000">اطلبها عبر واتساب</button></div>
+  </article>
+
+  <p class="note">تحتاج مدة أخرى، مثل ثلاثة أسابيع أو شهرين؟ حدد ميزانيتك في النموذج أعلاه ونبني لك الباقة.</p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>تابعنا وتواصل معنا</h2>
+  <p class="sub">شاهد أعمالنا على منصاتنا.</p>
+  <div class="cards">
+    <a class="sc" href="https://www.tiktok.com/" target="_blank" rel="noopener"><i><svg><use href="#tt"/></svg></i><div><b>تيك توك</b><span>@اسم_الحساب</span></div></a>
+    <a class="sc" href="https://www.instagram.com/" target="_blank" rel="noopener"><i><svg><use href="#ig"/></svg></i><div><b>انستقرام</b><span>@اسم_الحساب</span></div></a>
+    <a class="sc" href="https://x.com/" target="_blank" rel="noopener"><i><svg><use href="#x"/></svg></i><div><b>إكس</b><span>@اسم_الحساب</span></div></a>
+  </div>
+  <div class="team">
+    <div><b>مصوّر</b><span>تصوير المنتجات والمكان بكاميرات احترافية.</span></div>
+    <div><b>ممنتج ومصمم</b><span>مقاطع قصيرة وتصاميم وهوية بصرية لمحلك.</span></div>
+    <div><b>الذكاء الاصطناعي</b><span>أفكار ونصوص بلهجتنا وتسريع العمل. والتصوير الحقيقي هو الأساس.</span></div>
+  </div>
+</div></section>
+
+<footer>القصيم</footer>
+
+<script>
+// ضع رقم الواتساب هنا بصيغة دولية بدون + (مثال: 9665XXXXXXXX)
+var WA_NUMBER = "966500000000";
+function waUrl(t){ return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(t); }
+document.querySelectorAll("[data-msg]").forEach(function(a){
+  a.href = waUrl(a.getAttribute("data-msg"));
+  a.target = "_blank"; a.rel = "noopener";
+});
+var f = document.getElementById("f");
+var DAYS = {"أسبوع":7,"أسبوعان":14,"شهر":30};
+f.elements.dur.addEventListener("change", function(){ if (DAYS[this.value]) f.elements.days.value = DAYS[this.value]; });
+document.querySelectorAll("[data-pkg]").forEach(function(b){
+  b.addEventListener("click", function(){
+    var v = b.closest("article").querySelector("select").value;
+    window.open(waUrl("السلام عليكم، أبغى «" + b.getAttribute("data-pkg") + "» (" + b.getAttribute("data-price") + " ر.س)\nزيارات التصوير: " + v), "_blank", "noopener");
+  });
+});
+document.getElementById("f").addEventListener("submit", function(e){
+  e.preventDefault();
+  var d = new FormData(e.target);
+  var msg = "السلام عليكم، أبغى أطلب خدمة تسويق:\n" +
+    "المحل: " + d.get("shop") + " (" + d.get("kind") + ")\n" +
+    "الميزانية: " + d.get("budget") + " ر.س\n" +
+    "المدة: " + d.get("dur") + " (" + d.get("days") + " يوم)\n" +
+    "المطلوب: " + (d.getAll("type").join("، ") || "غير محدد") + "\nزيارات التصوير: " + d.get("visits") + (d.getAll("wd").length ? "\nالأيام المفضلة: " + d.getAll("wd").join("، ") : "") +
+    (d.get("note") ? "\nملاحظات: " + d.get("note") : "");
+  window.open(waUrl(msg), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
